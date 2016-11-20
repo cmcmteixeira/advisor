@@ -1,0 +1,4 @@
+CREATE DATABASE user;
+CREATE TABLE user.user (
+  id LONG AUTO_INCREMENT
+)

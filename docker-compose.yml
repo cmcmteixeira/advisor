@@ -1,0 +1,14 @@
+version: "2"
+services:
+  user:
+    build: ./user
+    volumes:
+      - "./user:/app"
+    ports:
+      - "3000:80"
+    depends_on:
+      - user_db
+  user_db:
+    build: ./user/db
+
+
